@@ -16,4 +16,13 @@ ul{
     padding: 0 16px;
     margin-left: auto;
     margin-right: auto;
+    @media(min-width: 480px){
+        width:380px;
+    }
+    @media(min-width: 768px){
+        width:760px;
+    }
+    @media(min-width: 1200px){
+        width:1180px;
+    }
 }
