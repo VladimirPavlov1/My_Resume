@@ -1,0 +1,15 @@
+.hero{
+    padding: 60px 0;
+}
+
+.hero__list{
+    display: flex;
+    gap:40px
+}
+.hero__item{
+    text-align: end;
+    line-height: 2;
+}
+.hero__title{
+    font-size: 32px;
+}
