@@ -1,26 +1,37 @@
 div.experience{
     display: flex;
+    width:100%;
     flex-grow: 1;
     border-top:3px solid black;
     border-bottom: 3px solid black;
+    padding: 0;
+    @media(min-width:768px){
     width:50%;
     padding-left: 40px;
+    }
 }
 .wrapper{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media(min-width:768px){
     justify-content:space-between;
     width:100%;
-    flex-grow: 1;
+    flex-grow: 1;}
     
 }
 .education{
+    display: flex;
+    width: 100%;
+    
+    @media(min-width:768px){
+    width: 50%;
     border-top:3px solid black;
     border-bottom: 3px solid black;
     border-right: 3px solid black;
     padding-right: 20px;
-    display: flex;
-    flex-grow: 1;
-    width: 50%;
+    flex-grow: 1;}
+   
 }
 .experience__list{
     display: block;
@@ -30,13 +41,25 @@ div.experience{
     margin-bottom: 60px;
 }
 .experience__title{
+    font-size: 16px;
     text-transform: uppercase;
+    @media(min-width:768px){
+        font-size: 24px;
+    }
 }
 .experience__name{
+    font-size: 14px;
     text-transform: uppercase;
+    @media(min-width:768px){
+        font-size: 20px;
+    }
 }
 .experience__description{
-    font-size: 18px;
+    font-size: 14px;
+    @media(min-width:768px){
+        font-size: 18px;
+    }
+   
    
 }
 .experience__skills-list{
@@ -44,7 +67,11 @@ div.experience{
     padding-left: 16px;
 }
 .experience__skills{
+    font-size: 14px;
     list-style-type: disc;
     margin-bottom: 16px;
     margin-left: 16px;
+    @media(min-width:768px){
+        font-size: 18px;
+    }
 }

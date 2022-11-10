@@ -13,14 +13,10 @@ ul {
   display: block;
   min-width: 270px;
   max-width: 1600px;
-  padding: 0 16px;
+  width: 380px;
+  padding: 0 25px;
   margin-left: auto;
   margin-right: auto;
-}
-@media (min-width: 480px) {
-  .container {
-    width: 380px;
-  }
 }
 @media (min-width: 768px) {
   .container {
@@ -31,6 +27,20 @@ ul {
   .container {
     width: 1180px;
   }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  font-weight: 900;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  text-decoration: none;
+  color: purple;
 }
 
 .header__list {
@@ -81,47 +91,90 @@ ul {
 }
 
 .hero__title {
-  font-size: 32px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 32px;
+  }
+}
+
+.hero__subtitle {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .hero__subtitle {
+    font-size: 24px;
+  }
+}
+
+.hero__qoute {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .hero__qoute {
+    font-size: 16px;
+  }
 }
 
 div.experience {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  width: 50%;
-  padding-left: 40px;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  div.experience {
+    width: 50%;
+    padding-left: 40px;
+  }
 }
 
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .education {
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  border-right: 3px solid black;
-  padding-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .education {
+    width: 50%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    padding-right: 20px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .experience__list {
@@ -134,15 +187,32 @@ div.experience {
 }
 
 .experience__title {
+  font-size: 16px;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .experience__title {
+    font-size: 24px;
+  }
 }
 
 .experience__name {
+  font-size: 14px;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .experience__name {
+    font-size: 20px;
+  }
 }
 
 .experience__description {
-  font-size: 18px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .experience__description {
+    font-size: 18px;
+  }
 }
 
 .experience__skills-list {
@@ -151,21 +221,45 @@ div.experience {
 }
 
 .experience__skills {
+  font-size: 14px;
   list-style-type: disc;
   margin-bottom: 16px;
   margin-left: 16px;
+}
+@media (min-width: 768px) {
+  .experience__skills {
+    font-size: 18px;
+  }
 }
 
 .footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .footer__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .footer__item {
   padding: 25px 0;
-  font-size: 22px;
+  margin-right: 40px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .footer__item {
+    font-size: 22px;
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

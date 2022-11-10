@@ -14,5 +14,20 @@
     line-height: 2;
 }
 .hero__title{
-    font-size: 32px;
+    font-size: 16px;
+    @media(min-width:768px){
+    font-size: 32px;}
+}
+.hero__subtitle{
+    font-size:14px;
+    @media(min-width:768px){
+        font-size: 24px;
+    }
+}
+.hero__qoute{
+    font-size: 14px;
+    @media(min-width:768px){
+        font-size: 16px;
+    }
+
 }
