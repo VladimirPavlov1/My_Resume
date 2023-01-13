@@ -69,6 +69,23 @@ a {
   padding: 16px 0;
 }
 
+.calling-message {
+  width: 100%;
+  text-align: start;
+}
+
+.calling-message__title {
+  font-size: 16px;
+}
+
+.telegram-icon {
+  margin: 0 10px;
+}
+
+.viber-icon {
+  margin: 0 10px;
+}
+
 .hero {
   padding: 60px 0;
 }
@@ -253,13 +270,16 @@ div.experience {
 }
 
 .footer__item {
-  padding: 25px 0;
   margin-right: 40px;
-  font-size: 16px;
 }
 @media (min-width: 768px) {
   .footer__item {
     font-size: 22px;
     margin-right: 0;
   }
+}
+
+.footer__link {
+  font-size: 16px;
+  padding: 25px 0;
 }/*# sourceMappingURL=main.css.map */
